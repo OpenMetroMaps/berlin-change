@@ -1,0 +1,10 @@
+# Friedrichstraße
+* [S1](../lines/S1.md)
+* [S2](../lines/S2.md)
+* [S25](../lines/S25.md)
+* [S26](../lines/S26.md)
+* [S3](../lines/S3.md)
+* [S5](../lines/S5.md)
+* [S7](../lines/S7.md)
+* [S9](../lines/S9.md)
+* [U6](../lines/U6.md)
