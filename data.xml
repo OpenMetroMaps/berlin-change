@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changes>
+  <change line="U9" towards="Rathaus Steglitz" at="Berliner Straße" change-line="U7">
+    <description text="middle (slightly to either side)" />
+  </change>
+  <change line="U9" towards="Rathaus Steglitz" at="Bundesplatz" change-line-regex="S.*">
+    <description text="front, but not completely" />
+  </change>
+  <change line="U9" towards="Osloer Straße" at="Berliner Straße" change-line="U7">
+    <description text="middle (slightly to either side)" />
+  </change>
+  <change line="U9" towards="Osloer Straße" at="Bundesplatz" change-line-regex="S.*">
+    <description text="back, but not completely" />
+  </change>
+</changes>
