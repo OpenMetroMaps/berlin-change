@@ -8,17 +8,5 @@ Although these files are considered deprecated,
 [they are still here](manual/README.md).
 
 The data is stored in the [data.xml](data.xml) file.
-
-# File format specs
-## Location attribute
-
-The `change` and `exit` element should contain a `location` attribute.
-It can have any of the following values:
-
-* `front`
-* `almost front`
-* `middle/middle front`
-* `middle`
-* `middle/middle back`
-* `almost back`
-* `back`
+Its format is
+[specified here](https://github.com/OpenMetroMaps/OpenMetroMaps/blob/master/spec-change-format.md).
