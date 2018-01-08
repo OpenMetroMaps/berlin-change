@@ -52,5 +52,4 @@
     <exit   at="Hermannstraße" name="north" location="back" description="Siegfriedstraße, Emser Straße" />
     <exit   at="Hermannstraße" name="south" location="front" description="Silbersteinstraße" />
   </batch>
-
 </changes>
