@@ -44,8 +44,47 @@
   <batch line="U8" towards="Hermannstraße">
     <change at="Hermannplatz" change-line="U7" location="middle/middle front" derive-reverse-from="true"/>
     <change at="Hermannstraße" change-line-regex="S.*" location="back"/>
-    <exit   at="Hermannstraße" name="north" location="back" description="Siegfriedstraße, Emser Straße"/>
-    <exit   at="Hermannstraße" name="south" location="front" description="Silbersteinstraße"/>
+    <exit   at="Hermannstraße" name="north" location="back" description="Hermannstraße, Siegfriedstraße, Emser Straße"/>
+    <exit   at="Hermannstraße" name="south" location="front" description="Hermannstraße, Silbersteinstraße, Kranoldstraße"/>
+  </batch>
+
+  <batch line="U8" towards="Wittenau">
+    <exit   at="Hermannstraße" name="south" location="back" description="Hermannstraße, Silbersteinstraße, Kranoldstraße"/>
+    <exit   at="Hermannstraße" name="north" location="front" description="Hermannstraße, Siegfriedstraße, Emser Straße"/>
+    <exit   at="Leinestraße" name="" location="back" description="Hermannstraße, Thomasstraße, Leinestraße"/>
+    <exit   at="Leinestraße" name="" location="front" description="Hermannstraße, Okerstraße"/>
+    <exit   at="Boddinstraße" name="" location="back" description="Hermannstraße, Boddinstraße, Selchower Straße"/>
+    <exit   at="Boddinstraße" name="" location="front" description="Hermannstraße, Biebricher Straße, Flughafenstraße"/>
+    <!-- Hermannplatz -->
+    <exit   at="Schönleinstraße" name="" location="back" description="Kottbusser Damm, Schönleinstraße, Bürknerstraße, Böckhstraße"/>
+    <exit   at="Schönleinstraße" name="" location="front" description="Kottbusser Damm, Schinkestr, Planufer, Maybachufer"/>
+    <change at="Kottbusser Tor" change-line="U1" location="almost back"/>
+    <change at="Kottbusser Tor" change-line="U1" location="middle"/>
+    <exit   at="Kottbusser Tor" name="" location="almost back" description=""/>
+    <exit   at="Kottbusser Tor" name="" location="middle" description=""/>
+    <exit   at="Kottbusser Tor" name="" location="front" description="Reichenberger Straße"/>
+    <exit   at="Moritzplatz" name="" location="middle/middle back" description="Oranienstraße, Prinzenstraße, Heinrich-Heine-Straße"/>
+    <exit   at="Moritzplatz" name="" location="middle/middle front" description="Oranienstraße, Prinzenstraße, Heinrich-Heine-Straße"/>
+    <exit   at="Heinrich-Heine-Straße" name="" location="back" description="Heinrich-Heine-Straße, Schmidstraße, Annenstraße"/>
+    <exit   at="Heinrich-Heine-Straße" name="" location="front" description="Köpenicker Straße, Brückenstraße, Rungestraße"/>
+    <change at="Jannowitzbrücke" change-line-regex="S.*" location="back"/>
+    <exit   at="Jannowitzbrücke" name="" location="back" description="Holzmarktstraße, Brückenstraße, Märkisches Ufer, Elevator"/>
+    <exit   at="Jannowitzbrücke" name="" location="front" description="Alexanderstraße, Stralauer Straße, Schicklerstraße"/>
+    <!-- Alexanderplatz -->
+    <exit   at="Weinmeisterstraße" name="" location="back" description="Alte Schönhauser Straße, Neue Schönhauser Straße, Münzstraße"/>
+    <exit   at="Weinmeisterstraße" name="" location="front" description="Rosenthaler Straße, Gormannstraße, Gipsstraße, M1"/>
+    <exit   at="Rosenthaler Platz" name="" location="back" description="Rosenthaler Straße, Torstraße, Weinbergstraße, VHS"/>
+    <exit   at="Rosenthaler Platz" name="" location="front" description="Brunnenstraße, Invalidenstraße, Veteranenstraße"/>
+    <exit   at="Bernauer Straße" name="" location="back" description="Brunnenstraße, Rheinsberger Straße, Anklamer Straße"/>
+    <exit   at="Bernauer Straße" name="" location="front" description="Brunnenstraße, Bernauer Straße, Gedenkstädte Berliner Mauer, Bus, Tram"/>
+    <exit   at="Voltastraße" name="" location="back" description="Brunenstraße, Usedomer Straße, Demminer, Bus, Elevator"/>
+    <exit   at="Voltastraße" name="" location="front" description="Brunnenstraße, Voltastraße, Lortzingstraße"/>
+    <!-- Gesundbrunnen -->
+    <exit   at="Pankstraße" name="back" location="middle/middle back" description="middle platform with two stairways to Prinzenallee"/>
+    <exit   at="Pankstraße" name="front" location="middle/middle front" description="middle platform with two stairways to Prinzenallee"/>
+    <exit   at="Osloer Straße" name="" location="back" description=""/>
+    <exit   at="Osloer Straße" name="" location="front" description=""/>
+    <change at="Osloer Straße" change-line="U9" location=""/>
   </batch>
 
   <batch line="S41" towards="Wedding" reverse-line="S42" reverse-towards="Schönhauser Allee">
