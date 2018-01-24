@@ -9,6 +9,6 @@ Although these files are considered deprecated,
 
 The data is stored in the [data.xml](data.xml) file.
 Its format is
-[specified here](https://github.com/OpenMetroMaps/OpenMetroMaps/blob/master/spec-change-format.md).
+[specified here](https://github.com/OpenMetroMaps/OpenMetroMaps/blob/master/spec-station-format.md).
 The current file format is not capable of storing all relevant data.
 This is why we're drafting a new file type, see [stations.xml](stations.xml).
