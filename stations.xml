@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stations>
+  <station name="Hermannstraße">
+    <intermediate name="north">
+      <stairs to="street">
+        <feature description="Hermannstraße, east side"/>
+        <feature description="Emser Straße"/>
+      </stairs>
+      <stairs to="street">
+        <feature description="Hermannstraße, west side"/>
+        <feature description="Emser Straße"/>
+      </stairs>
+    </intermediate>
+    <intermediate name="south">
+      <stairs to="street">
+        <feature description="Hermannstraße, east side"/>
+        <feature description="Silbersteinstraße"/>
+      </stairs>
+      <stairs to="street">
+        <feature description="Hermannstraße, west side"/>
+        <feature description="Silbersteinstraße"/>
+      </stairs>
+      <stairs to="street">
+        <feature description="Hermannstraße, west side"/>
+        <feature description="Hermannbrücke, west side"/>
+        <feature description="bus-stop"/>
+      </stairs>
+    </intermediate>
+    <intermediate name="s-u"/>
+    <platform type="bidirectional" line="U8" positions-towards-station="Leinestraße">
+      <connection type="stairs" to="intermediate" ref="south" position="0.0"/>
+      <connection type="stairs" to="intermediate" ref="north" position="1.0"/>
+      <connection type="stairs" to="intermediate" ref="s-u" position="0.45"/>
+      <connection type="stairs" to="intermediate" ref="s-u" position="0.55"/>
+      <connection type="elevator" to="street" position="0.6">
+        <feature description="Hermannstraße, traffic island"/>
+      </connection>
+    </platform>
+    <platform type="bidirectional" lines="S41,S42,S45,S46,S47" positions-towards-station="Tempelhof">
+      <connection type="stairs" to="intermediate" ref="s-u" position="0.45"/>
+      <connection type="stairs" to="intermediate" ref="s-u" position="0.55"/>
+      <connection type="stairs" to="street" position="0.1">
+        <feature description="Hermannstraße, east side"/>
+        <feature description="Hermannbrücke, east side"/>
+      </connection>
+      <connection type="elevator" to="street" position="0.3">
+        <feature description="Hermannstraße, east side"/>
+        <feature description="Hermannbrücke, east side"/>
+      </connection>
+      <connection type="escalator" to="street" position="0.8">
+        <!-- bidirectional escalator -->
+        <feature description="Hermannstraße, west side"/>
+        <feature description="Hermannbrücke, west side"/>
+      </connection>
+      <connection type="stairs" to="street" position="0.9">
+        <feature description="Hermannstraße, west side"/>
+        <feature description="Hermannbrücke, west side"/>
+      </connection>
+    </platform>
+  </station>
+
+  <station name="Leinestraße">
+    <intermediate name="south">
+      <stairs to="street">
+        <feature description="Hermannstraße, east side"/>
+      </stairs>
+      <stairs to="street">
+        <feature description="Hermannstraße, west side"/>
+      </stairs>
+    </intermediate>
+    <intermediate name="north">
+      <stairs to="street">
+        <feature description="Hermannstraße, east side"/>
+        <feature description="Leykestraße"/>
+      </stairs>
+      <stairs to="street">
+        <feature description="Hermannstraße, west side"/>
+        <feature description="Okerstraße"/>
+      </stairs>
+    </intermediate>
+    <platform type="bidirectional" line="U8" positions-towards-station="Boddinstraße">
+      <connection type="stairs" to="intermediate" ref="south" position="0.0"/>
+      <connection type="stairs" to="intermediate" ref="north" position="1.0"/>
+      <connection type="elevator" to="street" ref="north" position="0.6"/>
+        <feature description="Hermannstraße, traffic island"/>
+        <feature description="Leinestraße"/>
+      </connection>
+    </platform>
+  </station>
+
+  <station name="Boddinstraße">
+    <platform type="bidirectional" line="U8" positions-towards-station="Hermannplatz">
+      <connection type="stairs" to="street" position="0.0">
+        <feature description="Hermannstraße, traffic island"/>
+        <feature description="Selchower Straße"/>
+      </connection>
+      <connection type="stairs" to="street" position="1.0">
+        <feature description="Hermannstraße, traffic island"/>
+        <feature description="Flughafenstraße, north side"/>
+      </connection>
+      <connection type="elevator" to="street" ref="north" position="0.6"/>
+        <!-- stairs, too? -->
+        <feature description="Hermannstraße, traffic island"/>
+        <feature description="Flughafenstraße, south side"/>
+        <feature description="Mahlower Straße"/>
+      </connection>
+    </platform>
+  </station>
+</changes>
