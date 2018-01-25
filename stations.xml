@@ -120,4 +120,60 @@
       </connection>
     </platform>
   </station>
+
+  <station name="Hermannplatz">
+    <platform type="bidirectional" line="U8" positions-towards-station="Schönleinstraße">
+      <feature position="0.0" description="BVG minimarkt"/>
+      <connection position="0.1" type="stairs+escalators" to="U7/Spandau/0.4"/>
+      <feature position="0.3" description="ATM Berliner Sparkasse"/>
+      <connection position="0.4" type="stairs+escalators" to="U7/Rudow/0.55"/>
+      <connection position="0.55" type="stairs+escalator" to="street">
+        <feature description="Hermannplatz"/>
+      </connection>
+      <feature position="0.55" description="Ticket machine"/>
+      <connection position="0.7" type="stairs" to="intermediate" ref="tunnel"/>
+      <connection position="0.9" type="stairs" to="intermediate" ref="tunnel"/>
+      <elevator position="0.65" to="street"/>
+    </platform>
+    <platform type="bidirectional" line="U7" positions-towards-station="Südstern">
+      <connection position="1.0" type="stairs" to="intermediate" ref="hasenheide"/>
+      <connection position="0.0" type="stairs" to="intermediate" ref="karl-marx"/>
+    </platform>
+    <intermediate name="tunnel">
+      <stairs to="intermediate" ref="karstadt"/>
+    </intermediate>
+    <intermediate name="karstadt">
+      <connection type="stairs+escalators">
+        <feature description="Karstadt, basement"/>
+      </connection>
+      <connection type="stairs" to="U7/Spandau/0.7"/>
+      <connection type="elevator" to="U7/Spandau/0.8"/>
+      <connection type="stairs" to="U7/Spandau/0.9"/>
+      <connection type="elevator" to="street"/>
+      <!-- elevator to U8 via street -->
+    </intermediate>
+    <intermediate name="hasenheide">
+      <stairs to="street">
+        <feature description="Hasenheide, north side"/>
+        <feature description="Wissmannstraße"/>
+      </stairs>
+      <stairs to="street">
+        <feature description="Hasenheide, south side"/>
+      </stairs>
+    </intermediate>
+    <intermediate name="karl-marx">
+      <stairs to="street">
+        <feature description="Karl-Marx-Straße, north side, towards Hermannplatz"/>
+      </stairs>
+      <stairs to="street">
+        <feature description="Karl-Marx-Straße, north side, away from Hermannplatz"/>
+      </stairs>
+      <stairs to="street">
+        <feature description="Karl-Marx-Straße, south side, towards Hermannplatz"/>
+      </stairs>
+      <stairs to="street">
+        <feature description="Karl-Marx-Straße, south side away, from Hermannplatz"/>
+      </stairs>
+    </intermediate>
+  </station>
 </changes>
