@@ -12,6 +12,9 @@
       </stairs>
     </intermediate>
     <intermediate name="south">
+      <feature description="Asia Markt"/>
+      <feature description="florist"/>
+      <feature description="Hermann-Quartier, basement"/>
       <stairs to="street">
         <feature description="Hermannstraße, east side"/>
         <feature description="Silbersteinstraße"/>
@@ -20,21 +23,32 @@
         <feature description="Hermannstraße, west side"/>
         <feature description="Silbersteinstraße"/>
       </stairs>
-      <stairs to="street">
+      <connection to="street" type="stairs+escalator-up">
         <feature description="Hermannstraße, west side"/>
         <feature description="Hermannbrücke, west side"/>
         <feature description="bus-stop"/>
       </stairs>
+      <connection to="street" type="stairs+escalator-down">
+        <feature description="Hermannstraße, east side"/>
+        <feature description="Hermannbrücke, east side"/>
+        <feature description="bus-stop"/>
+        <feature description="Hermann-Quartier"/>
+      </stairs>
     </intermediate>
     <intermediate name="s-u"/>
     <platform type="bidirectional" line="U8" positions-towards-station="Leinestraße">
-      <connection type="stairs" to="intermediate" ref="south" position="0.0"/>
-      <connection type="stairs" to="intermediate" ref="north" position="1.0"/>
+      <connection type="stairs+escalators" to="intermediate" ref="south" position="0.0"/>
+      <connection type="stairs+escalators" to="intermediate" ref="north" position="1.0"/>
       <connection type="stairs" to="intermediate" ref="s-u" position="0.45"/>
       <connection type="stairs" to="intermediate" ref="s-u" position="0.55"/>
       <connection type="elevator" to="street" position="0.6">
         <feature description="Hermannstraße, traffic island"/>
       </connection>
+      <feature position="0.0" description="Ticket machine"/>
+      <feature position="0.0" description="SOS"/>
+      <feature position="0.3" description="Backshop"/>
+      <feature position="1.0" description="Ticket machine"/>
+      <feature position="1.0" description="SOS"/>
     </platform>
     <platform type="bidirectional" lines="S41,S42,S45,S46,S47" positions-towards-station="Tempelhof">
       <connection type="stairs" to="intermediate" ref="s-u" position="0.45"/>
